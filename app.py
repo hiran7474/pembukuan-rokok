@@ -238,7 +238,7 @@ fitur = st.sidebar.radio(
 )
 
 st.sidebar.markdown("---")
-st.sidebar.caption("👨‍💻 **Pengelola:** Hiran © 2026 (Mode Online SQLite)")
+st.sidebar.caption("👨‍💻 **Pengelola:** Hiran")
 
 # ---------------------------------------------------------
 # 1. HALAMAN DASHBOARD
