@@ -238,7 +238,7 @@ fitur = st.sidebar.radio(
 )
 
 st.sidebar.markdown("---")
-st.sidebar.caption("👨‍💻 **Pengelola:** Hiran")
+st.sidebar.caption("👨‍💻 **ADMIN:** Hiran")
 
 # ---------------------------------------------------------
 # 1. HALAMAN DASHBOARD
