@@ -34,7 +34,7 @@ def init_db():
             Total Keluar INTEGER,
             Satuan TEXT
         )
-    """)
+    """
     
     # Tabel Riwayat Penjualan
     cursor.execute("""
