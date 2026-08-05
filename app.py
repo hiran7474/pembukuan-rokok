@@ -24,16 +24,17 @@ def init_db():
     # Tabel Barang
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS barang (
-            Kode TEXT PRIMARY KEY,
-            Nama Barang TEXT,
+            KODE TEXT PRIMARY KEY,
+            Nama_Barang TEXT,
             Kategori TEXT,
-            Harga Beli INTEGER,
-            Harga Jual INTEGER,
-            Stok Awal INTEGER,
-            Total Restok INTEGER,
-            Total Keluar INTEGER,
+            Harga_Beli INTEGER,
+            Harga_Jual INTEGER,
+            Stok_Awal INTEGER,
+            Total_Restok INTEGER,
+            Total_Keluar INTEGER,
             Satuan TEXT
         )
+    """)
     """
     
     # Tabel Riwayat Penjualan
