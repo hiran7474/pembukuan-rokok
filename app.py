@@ -18,11 +18,11 @@ def get_connection():
     return sqlite3.connect(DB_FILE, check_same_thread=False)
 
 def init_db():
-    conn = get_connection()
-    cursor = conn.cursor()
-    
-    # Tabel Barang
-    cursor.execute("""
+  conn = get_connection()
+  cursor = conn.cursor()
+
+  # Tabel Barang
+  cursor.execute("""
         CREATE TABLE IF NOT EXISTS barang (
             KODE TEXT PRIMARY KEY,
             Nama_Barang TEXT,
@@ -35,22 +35,21 @@ def init_db():
             Satuan TEXT
         )
     """)
-    """
-    
-    # Tabel Riwayat Penjualan
-    cursor.execute("""
+
+  # Tabel Riwayat Penjualan
+  cursor.execute("""
         CREATE TABLE IF NOT EXISTS riwayat_penjualan (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            No_Struk TEXT,
             Tanggal TEXT,
-            Nama Barang TEXT,
-            Jumlah Keluar INTEGER,
-            Satuan TEXT,
-            Status TEXT
+            Kode TEXT,
+            Nama_Barang TEXT,
+            Jumlah INTEGER,
+            Total_Harga INTEGER
         )
     """)
-    conn.commit()
-    conn.close()
+
+  conn.commit()
+  conn.close()
 
 init_db()
 
